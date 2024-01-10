@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#e8f08d;
+    --color-red:#ea3827;
+    --color-text:#e3e7e9;
+}
+
+.github{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.github a{
+    font-weight: bold;
+    font-size: 17px;
+}
+/* body */
+body{
+    font-family: sans-serif;
+   
+}
+.form-wrapper{
+background: url(../images/Italian\ bread\ sticks\ grissini.jpg) no-repeat center center /cover ;
+position: relative;
+bottom: 0;
+min-height: 105vh; 
+}
+
+.form-container{
+background:  linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.6));
+position: relative;
+top: 1.5rem;
+width:40%;
+min-height: 25rem;
+padding:30px ;
+margin: 50px auto;
+border-radius: 4px;
+
+ }
+.form-header{
+text-align: center;
+}
+.form-title{
+color: var(--primary-color);
+}
+.form-subtitle{
+color: var(--color-text);
+margin-top: 2rem;
+padding: 0 0 0.6rem 0;
+border-bottom: 1px dotted #e8f08d;
+border-width:3px;
+
+}
+.form-content{
+    display: flex;
+    margin:2rem 0 0 5rem;
+    width: 65%; 
+    flex-wrap: wrap;
+}
+.form-row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.form-left{
+    width: 30%;
+    min-height: 100%;
+}
+.form-right{
+    width: 70%;
+    min-height: 100%;
+}
+.form-label{ 
+    color: #e8f08d;
+}
+.form-label span{
+    color: #ea3827;
+}
+.form-inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-name{
+    width: 49%;
+}
+
+.form-input{ 
+    padding: 7px 0;
+    border: 1px solid #e8f08d;
+    background-color: transparent;
+}
+.form-inputs-text{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: #e8f08d;
+}
+.input-email{
+    width: 100%;
+}
+.form-input-phone{
+    width: 26%;
+    position: relative;
+    
+}
+.input-phone{
+  width: 100%;
+}
+.form-input-phone:not(:last-child)::after{
+    content: "-";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e8f08d;
+    margin: 0 0.75rem;
+    /* padding: 2px */
+    
+}
+.phone-text{
+     justify-content: space-between !important;
+    
+}
+.phone-text > p{
+    width:26%;
+    justify-content: space-between;
+}
+
+.form-input-temes{
+    width: 15px;
+}
+
+.form-input-terms-text{
+    width: 90%;
+    color: #e8f08d;
+    font-weight: bold;
+    font-size:12px !important;
+}
+.form-select-input{
+    margin: 2rem 0;
+    width: 25%;
+    padding: 6px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 2px solid #e8f08d;
+    color: #e3e7e9;
+}
+.form-select-input option{
+    color: black;
+}
+.form-total-content{
+    width: 90%;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.form-total-content-row{
+    padding: 4px;
+    font-weight: bold;
+    color: #e3e7e9;
+    display: flex;
+    justify-content: space-between;
+}
+.form-total-content-row:not(:last-child){
+    border-bottom: 1px solid #e3e7e9;
+}
+.form-content-dollar{
+    font-size: 12px;
+
+}
+
+.form-btn{
+    width: 90%;
+    text-align: center;
+    color: var(--color-text);
+    background-color: var(--color-red);
+    border: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size:1rem ;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
